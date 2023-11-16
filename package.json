@@ -1,0 +1,38 @@
+{
+  "name": "viera.dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "fixup": "git commit --no-verify -m \"fix\" --fixup ",
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "prepare": "husky install",
+    "changelog": "generate-changelog"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "config": {
+    "commitizen": {
+      "CZ_SKIP_SCOPE": false,
+      "CZ_CUSTOM_SCOPE": true,
+      "CZ_EXCLAMATION_MARK": true,
+      "path": "./commitizen-config.js"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.1",
+    "@commitlint/cz-commitlint": "^18.4.1",
+    "@digitalroute/cz-conventional-changelog-for-jira": "^8.0.1",
+    "commitizen": "^4.3.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.1.0",
+    "turbo": "^1.10.16"
+  }
+}

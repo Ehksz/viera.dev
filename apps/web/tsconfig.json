@@ -1,0 +1,66 @@
+{
+  "extends": "tsconfig/nextjs.json",
+  "compilerOptions": {
+    "downlevelIteration": true,
+    "target": "es2015",
+    "paths": {
+      "#hooks": [
+        "./src/hooks"
+      ],
+      "#hooks/*": [
+        "./src/hooks/*"
+      ],
+      "#utils": [
+        "./src/utils"
+      ],
+      "#utils/*": [
+        "./src/utils/*"
+      ],
+      "#components": [
+        "./src/components"
+      ],
+      "#components/*": [
+        "./src/components/*"
+      ],
+      "#redux": [
+        "./src/redux"
+      ],
+      "#redux/*": [
+        "./src/redux/*"
+      ],
+      "#config": [
+        "./src/config"
+      ],
+      "#config/*": [
+        "./src/config/*"
+      ],
+      "#context": [
+        "./src/context"
+      ],
+      "#context/*": [
+        "./src/context/*"
+      ],
+      "#hoc": [
+        "./src/hoc"
+      ],
+      "#hoc/*": [
+        "./src/hoc/*"
+      ],
+      "#services": [
+        "./src/services"
+      ],
+      "#services/*": [
+        "./src/services/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "../../packages/ui/components/PhoneInput.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
