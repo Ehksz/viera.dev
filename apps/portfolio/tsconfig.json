@@ -1,8 +1,7 @@
 {
-  "extends": "tsconfig/nextjs.json",
+  "extends": "tsconfig/next",
   "compilerOptions": {
-    "downlevelIteration": true,
-    "target": "es2015",
+    "rootDir": "./",
     "paths": {
       "#hooks": [
         "./src/hooks"
@@ -52,13 +51,15 @@
       "#services/*": [
         "./src/services/*"
       ]
-    }
+    },
+    "moduleResolution": "node"
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "../../packages/ui/components/PhoneInput.tsx"
+    "../../packages/ui/components/PhoneInput.tsx",
+    "next.config.js"
   ],
   "exclude": [
     "node_modules"

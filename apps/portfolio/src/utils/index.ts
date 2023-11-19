@@ -23,7 +23,7 @@ export const download = (file: File) => {
   window.URL.revokeObjectURL(url);
 };
 
-type Swap = (record: Record<string, string | number>) => Record<string, string>;
+export type Swap = (record: Record<string, string | number>) => Record<string, string>;
 
 export const swapKeysValues: Swap = (record) =>
   Object.fromEntries(Object.entries(record).map(([key, value]) => [value, key]));

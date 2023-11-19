@@ -20,6 +20,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
+  "typescript.suggestionActions.enabled": false,"javascript.suggestionActions.enabled": false,
   "typescript.tsdk": "node_modules/typescript/lib",
   "yaml.schemas": {
     "file:///Users/xavier/.vscode/extensions/atlassian.atlascode-3.0.7/resources/schemas/pipelines-schema.json": [

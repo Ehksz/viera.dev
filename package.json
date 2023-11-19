@@ -31,8 +31,12 @@
     "@commitlint/cz-commitlint": "^18.4.1",
     "@digitalroute/cz-conventional-changelog-for-jira": "^8.0.1",
     "commitizen": "^4.3.0",
+    "eslint": "^8.54.0",
+    "eslint-config-custom": "workspace:*",
     "husky": "^8.0.3",
     "prettier": "^3.1.0",
-    "turbo": "^1.10.16"
+    "tsconfig": "workspace:*",
+    "turbo": "^1.10.16",
+    "prettier-config": "workspace:*"
   }
 }
